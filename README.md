@@ -26,7 +26,7 @@ The package contains the required ssh binaries for secure communication.
 
 ## Downloads
 
-Downloads are available via [GitHub Releases](https://github.com/itefixnet/cwrsync-client/releases).
+Downloads are available via [GitHub Releases](https://github.com/joelbaltazor/cwrsync-client/releases).
 
 ## Resources
 
