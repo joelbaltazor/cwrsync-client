@@ -38,7 +38,7 @@ Download the .zip file or clone this git repository here.
 When I used the .zip file, it creates it's own subfolder and my path looks like:
 C:\cygwin_temp\cwrsync-client-main\
 
-## Commpile
+## Compile
 Run Cygwin 64 Terminal as an administrator of your windows computer (right-click, run as)
 In the cygwin terminal:
 cd /cygdrive/c/cygwin_temp/cwrsync-client-main/build/
@@ -54,7 +54,12 @@ the patches from -patches tar.gz have been copied to the build directory of this
 
 The patches may not apply cleanly (hunk failed), but this appears to be just the documentation parts of the patches and does not negatively impact the build. OK to ignore (at least for now)
 
+cwrsync.cmd, nsswitch.conf, & ssh_config came from the last available cwrsync build - 6.4.8
+
 Use at your own risk, script does minimal error checking
+
+
+--- Everything below here is from the original itefix description ---
 
 # cwRsync client
 
