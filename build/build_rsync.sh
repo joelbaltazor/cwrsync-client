@@ -87,6 +87,11 @@ cp /usr/bin/cygxxhash-0.dll "${BIN_DIR}/" || { echo "Failed to copy cygxxhash-0.
 cp /usr/bin/cygz.dll "${BIN_DIR}/" || { echo "Failed to copy cygz.dll"; exit 1; }
 cp /usr/bin/cygzstd-1.dll "${BIN_DIR}/" || { echo "Failed to copy cygzstd-1.dll"; exit 1; }
 
+cp /usr/bin/ssh.exe "${BIN_DIR}/" || { echo "Failed to copy ssh.exe"; exit 1; }
+cp /usr/bin/ssh-add.exe "${BIN_DIR}/" || { echo "Failed to copy ssh-add.exe"; exit 1; }
+cp /usr/bin/ssh-agent.exe "${BIN_DIR}/" || { echo "Failed to copy ssh-agent.exe"; exit 1; }
+cp /usr/bin/ssh-keygen.exe "${BIN_DIR}/" || { echo "Failed to copy ssh-keygen.exe"; exit 1; }
+
 cp ${PROJECT_ROOT}/nsswitch.conf "${ETC_DIR}/" || { echo "Failed to copy nsswitch.conf"; exit 1; }
 cp ${PROJECT_ROOT}/ssh_config "${ETC_DIR}/" || { echo "Failed to copy ssh_config"; exit 1; }
 
