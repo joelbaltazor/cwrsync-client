@@ -86,6 +86,12 @@ cp /usr/bin/cygwin1.dll "${BIN_DIR}/" || { echo "Failed to copy cygwin1.dll"; ex
 cp /usr/bin/cygxxhash-0.dll "${BIN_DIR}/" || { echo "Failed to copy cygxxhash-0.dll"; exit 1; }
 cp /usr/bin/cygz.dll "${BIN_DIR}/" || { echo "Failed to copy cygz.dll"; exit 1; }
 cp /usr/bin/cygzstd-1.dll "${BIN_DIR}/" || { echo "Failed to copy cygzstd-1.dll"; exit 1; }
+cp /usr/bin/cyggssapi_krb5-2.dll "${BIN_DIR}/" || { echo "Failed to copy cyggssapi_krb5-2.dll"; exit 1; }
+cp /usr/bin/cygk5crypto-3.dll "${BIN_DIR}/" || { echo "Failed to copy cygk5crypto-3.dll"; exit 1; }
+cp /usr/bin/cygcom_err-2.dll "${BIN_DIR}/" || { echo "Failed to copy cygcom_err-2.dll"; exit 1; }
+cp /usr/bin/cygkrb5-3.dll "${BIN_DIR}/" || { echo "Failed to copy cygk5-3.dll"; exit 1; }
+cp /usr/bin/cygkrb5support-0.dll "${BIN_DIR}/" || { echo "Failed to copy cygkrb5support-0.dll"; exit 1; }
+cygk5crypto-3.dll
 
 cp /usr/bin/ssh.exe "${BIN_DIR}/" || { echo "Failed to copy ssh.exe"; exit 1; }
 cp /usr/bin/ssh-add.exe "${BIN_DIR}/" || { echo "Failed to copy ssh-add.exe"; exit 1; }
