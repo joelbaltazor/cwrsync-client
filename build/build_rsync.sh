@@ -52,13 +52,13 @@ echo Applying patches ...
 #no-password-file-check.diff was already here
 cp ${PROJECT_ROOT}/transliterate.diff .
 cp ${PROJECT_ROOT}/ignore-case.diff .
-cp ${PROJECT_ROOT}/no-password-file-check.diff .
+cp ${PROJECT_ROOT}/no-password-file-check-v2.diff .
 
 #patch -N -p1 <patches/transliterate.diff # old path -patches tar.gz
 #patch -N -p1 <patches/ignore-case.diff # old path from -patches tar.gz
 patch -N -p1 <./transliterate.diff
 patch -N -p1 <./ignore-case.diff
-patch  <./no-password-file-check.diff
+patch  <./no-password-file-check-v2.diff
 
 export LDFLAGS=-L/usr/local/lib
 ./configure --disable-acl-support --disable-xattr-support
