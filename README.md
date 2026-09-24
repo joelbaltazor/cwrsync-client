@@ -24,6 +24,7 @@ libpopt-devel (Command-line option parsing headers) – 1.19-1
 attr & libattr-devel – 2.5.2-2
 patch – 2.8-1
 zip (needed for bash script to make zip file) – 3.0-13
+*As of 3.5.1 rsync needs the libidn2-devel package
 
 Also, cwRsync would add ssh.exe, ssh-add.exe, ssh-agent.exe, ssh-keygen.exe.  These are part of the openssh package. Install it too.  - 10.3p1-1
 
