@@ -91,7 +91,7 @@ cp /usr/bin/cygk5crypto-3.dll "${BIN_DIR}/" || { echo "Failed to copy cygk5crypt
 cp /usr/bin/cygcom_err-2.dll "${BIN_DIR}/" || { echo "Failed to copy cygcom_err-2.dll"; exit 1; }
 cp /usr/bin/cygkrb5-3.dll "${BIN_DIR}/" || { echo "Failed to copy cygk5-3.dll"; exit 1; }
 cp /usr/bin/cygkrb5support-0.dll "${BIN_DIR}/" || { echo "Failed to copy cygkrb5support-0.dll"; exit 1; }
-cygk5crypto-3.dll
+cp /usr/bin/cygidn2-0.dll "${BIN_DIR}/" || { echo "Failed to copy ccygidn2-0.dll"; exit 1; }
 
 cp /usr/bin/ssh.exe "${BIN_DIR}/" || { echo "Failed to copy ssh.exe"; exit 1; }
 cp /usr/bin/ssh-add.exe "${BIN_DIR}/" || { echo "Failed to copy ssh-add.exe"; exit 1; }
@@ -109,6 +109,14 @@ cp ${PROJECT_ROOT}/cwrsync.cmd "${STAGE_DIR}/" || { echo "Failed to copy cwrsync
 ./rsync --version
 
 cd "${STAGE_DIR}" || exit 1
+
+#get some version info - this file ends up in zip:
+echo "Package and Version" > version-build.txt
+echo "Rsync              ${VERSION}" >> version-build.txt
+cygcheck -cd cygwin | awk '$1=="cygwin"' >> version-build.txt
+cygcheck -cd openssh | awk '$1=="openssh"' >> version-build.txt
+cygcheck -cd openssl | awk '$1=="openssl"' >> version-build.txt
+
 
 #Create .zip file:
 zip -r "${ZIP_PATH}" ./*
